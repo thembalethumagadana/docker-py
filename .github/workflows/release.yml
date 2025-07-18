@@ -28,6 +28,7 @@ jobs:
 
       - name: Generate Package
         run: |
+          lscpu
           pip3 install build
           python -m build .
         env:
